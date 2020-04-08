@@ -8,13 +8,15 @@ import (
 	"github.com/alitaso345/monkey/parser"
 )
 
-func TestIntegerExpression(t *testing.T) {
+func TestEvalIntegerExpression(t *testing.T) {
 	tests := []struct {
 		input    string
 		expected int64
 	}{
 		{"5", 5},
 		{"10", 10},
+		{"-5", -5},
+		{"-10", -10},
 	}
 
 	for _, tt := range tests {
