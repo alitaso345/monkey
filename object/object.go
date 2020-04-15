@@ -10,6 +10,8 @@ import (
 
 type ObjectType string
 
+type BuiltinFunction func(args ...Object) Object
+
 const (
 	INTEGER_OBJ      = "INTEGER"
 	BOOLEAN_OBJ      = "BOOLEAN"
